@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westus"
+        },
+        "jenkinsDnsNameForPublicIP": {
+            "value": "GEN-UNIQUE-8"
+        },
+        "jenkinsUsername": {
+            "value": "ashuser"
+        },
+        "jenkinsPassword": {
+            "value": "GEN-PASSWORD"
+        },
+        "jenkinsAdminPassword": {
+            "value": "GEN-PASSWORD"
+        },
+        "size": {
+            "value": "Project"
+        },
+        "ucpControllerCount": {
+            "value": 3
+        },
+        "ucpNodeCount": {
+            "value": 3
+        },
+        "ucpDtrNodeCount": {
+            "value": 3
+        },
+        "dockerAdminUsername": {
+            "value": "ucpadmin"
+        },
+        "dockerAdminPassword": {
+            "value": "GEN-PASSWORD"
+        },
+        "controllerLbPublicIpDnsName": {
+            "value": "GEN-UNIQUE-8"
+        },
+        "nodeLbPublicIpDnsName": {
+            "value": "GEN-UNIQUE-8"
+        },
+        "nodeDtrLbPublicIpDnsName": {
+            "value": "GEN-UNIQUE-8"
+        },
+        "ucpLicenseKey": {
+            "value": "https://validationartifacts01.blob.core.windows.net/licenses/docker_subscription.lic"
+        },
+        "ucpAdminPassword": {
+            "value": "GEN-PASSWORD"
+        },
+        "baseUrl": {
+            "value": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/cloudbeesjenkins-dockerdatacenter"
+        }
+    }
+}
